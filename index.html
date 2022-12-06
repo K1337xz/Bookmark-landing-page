@@ -4,14 +4,17 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- displays site properly based on user's device -->
-
+		<script
+			src="https://kit.fontawesome.com/fadebd397d.js"
+			crossorigin="anonymous"
+		></script>
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
 			href="./images/favicon-32x32.png"
 		/>
-
+		<link rel="stylesheet" href="../css/style.css" />
 		<title>Frontend Mentor | Bookmark landing page</title>
 
 		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -27,11 +30,16 @@
 	</head>
 	<body>
 		<header>
-			<nav class="mobile">
+			<nav class="mainNav">
 				<a href="#"
 					><img src="../images/logo-bookmark.svg" alt="logo-bookmark"
 				/></a>
 				<div class="navWrapper">
+					<a href="#"
+						><img
+							src="../images/logo-bookmark.svg"
+							alt="logo-bookmark"
+					/></a>
 					<ul class="navItems">
 						<li><a href="">Features</a></li>
 						<li><a href="">Pricing</a></li>
@@ -39,6 +47,7 @@
 						<li><a href="">Login</a></li>
 					</ul>
 				</div>
+				<i class="fa-solid fa-bars fa-1x"></i>
 			</nav>
 		</header>
 		<main class="container">
@@ -179,18 +188,28 @@
 					you’d like answered please feel free to email us.
 				</p>
 				<div class="faq">
-					<details>
-						<summary>What is Bookmark?</summary>
-						<div class="firstFaq">
+					<div class="faqQuestion">
+						<h4>What is Bookmark?</h4>
+						<span class="arrowDown"
+							><i class="fa-solid fa-chevron-down fa-1x"></i
+						></span>
+					</div>
+					<div class="firstFaq">
+						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing
 							elit. Fusce tincidunt justo eget ultricies
 							fringilla. Phasellus blandit ipsum quis quam ornare
 							mattis.
-						</div>
-					</details>
-					<details>
-						<summary>How can I request a new browser?</summary>
-						<div class="secondFaq">
+						</p>
+					</div>
+					<div class="faqQuestion">
+						<h4>How can I request a new browser?</h4>
+						<span class="arrowDown"
+							><i class="fa-solid fa-chevron-down fa-1x"></i
+						></span>
+					</div>
+					<div class="secondFaq">
+						<p>
 							Vivamus luctus eros aliquet convallis ultricies.
 							Mauris augue massa, ultricies non ligula.
 							Suspendisse imperdiet. Vivamus luctus eros aliquet
@@ -198,20 +217,87 @@
 							non ligula. Suspendisse imperdie tVivamus luctus
 							eros aliquet convallis ultricies. Mauris augue
 							massa, ultricies non ligula. Suspendisse imperdiet.
-						</div>
-					</details>
+						</p>
+					</div>
+					<div class="faqQuestion">
+						<h4>Is there a mobile app?</h4>
+						<span class="arrowDown"
+							><i class="fa-solid fa-chevron-down fa-1x"></i
+						></span>
+					</div>
+					<div class="thirdFaq">
+						<p>
+							Sed consectetur quam id neque fermentum accumsan.
+							Praesent luctus vestibulum dolor, ut condimentum
+							urna vulputate eget. Cras in ligula quis est
+							pharetra mattis sit amet pharetra purus. Sed
+							sollicitudin ex et ultricies bibendum.
+						</p>
+					</div>
+					<div class="faqQuestion">
+						<h4>What about other Chromium browsers?</h4>
+						<span class="arrowDown"
+							><i class="fa-solid fa-chevron-down fa-1x"></i
+						></span>
+					</div>
+					<div class="fourthQuestion">
+						<p>
+							Integer condimentum ipsum id imperdiet finibus.
+							Vivamus in placerat mi, at euismod dui. Aliquam
+							vitae neque eget nisl gravida pellentesque non ut
+							velit. More Info 35,000+ already joined Stay
+							up-to-date with what we’re doing Contact Us Features
+							Pricing Contact
+						</p>
+					</div>
 				</div>
+				<a href="#">More Info</a>
+			</div>
+			<div class="upperFooter">
+				<h5>35.300 + Already joined</h5>
+				<p>Stay up-to-date with what we're doing</p>
+				<form method="get">
+					<label for="email">
+						<input type="email" name="email" id="email" />
+					</label>
+					<label for="contactButton">
+						<input type="button" value="Contact Us" id="email" />
+					</label>
+				</form>
 			</div>
 		</main>
 		<footer>
-			<p class="attribution">
-				Challenge by
-				<a
-					href="https://www.frontendmentor.io?ref=challenge"
-					target="_blank"
-					>Frontend Mentor</a
-				>. Coded by <a href="#">Your Name Here</a>.
-			</p>
+			<div class="footerNav">
+				<a href="#"
+					><img src="../images/logo-bookmark.svg" alt="logo-bookmark"
+				/></a>
+				<ul class="footerNavItems">
+					<li><a href="">Features</a></li>
+					<li><a href="">Pricing</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+				<div class="socialWrap">
+					<a href=""
+						><i class="fa-brands fa-square-facebook"></i
+						><span>Facebook</span></a
+					>
+
+					<a href=""
+						><i class="fa-brands fa-twitter"></i
+						><span>twitter</span></a
+					>
+				</div>
+			</div>
+			<div class="information">
+				<p class="attribution">
+					Challenge by
+					<a
+						href="https://www.frontendmentor.io?ref=challenge"
+						target="_blank"
+						>Frontend Mentor</a
+					>. Coded by <a href="#">Your Name Here</a>.
+				</p>
+			</div>
 		</footer>
 	</body>
 </html>
