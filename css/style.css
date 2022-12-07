@@ -81,6 +81,30 @@
     letter-spacing: 5px;
     color: hsl(0deg, 0%, 100%);
   }
+  .featuresItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    height: 35dvh;
+  }
+  .featuresItems li {
+    list-style: none;
+    padding: 1rem;
+    border-top: 1px solid hsl(229deg, 8%, 60%);
+    width: 80%;
+  }
+  .featuresItems li:last-child {
+    border-bottom: 1px solid hsl(229deg, 8%, 60%);
+  }
+  .featuresItems li a {
+    text-decoration: none;
+    color: hsl(229deg, 31%, 21%);
+  }
+  .featuresItems li a.active {
+    border-bottom: 3px solid hsl(0deg, 94%, 66%);
+    padding-bottom: 0.8rem;
+  }
 }
 * {
   font-family: "Rubik", sans-serif;
@@ -162,14 +186,160 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-top: 5rem;
   }
   .middleFeaturesWrapper h2 {
     color: hsl(229deg, 31%, 21%);
   }
   .middleFeaturesWrapper p {
     color: hsl(229deg, 8%, 60%);
+    margin-top: 1rem;
   }
-  .featuresItemsWrap img {
+  .featuresItemsWrap .bookmark {
+    display: block;
+  }
+  .featuresItemsWrap .bookmark .bookmarkContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    height: 33dvh;
+  }
+  .featuresItemsWrap .bookmark .bookmarkContent a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: hsl(231deg, 69%, 60%);
+    color: hsl(0deg, 0%, 100%);
+    width: 20dvh;
+    height: 5dvh;
+    margin-top: 2rem;
+    border-radius: 5px;
+  }
+  .featuresItemsWrap .inteligent {
+    display: none;
+  }
+  .featuresItemsWrap .inteligent .inteligentImage img {
+    width: 65%;
+  }
+  .featuresItemsWrap .inteligent .intelligentContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    height: 26dvh;
+  }
+  .featuresItemsWrap .inteligent .intelligentContent a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: hsl(231deg, 69%, 60%);
+    color: hsl(0deg, 0%, 100%);
+    width: 20dvh;
+    height: 5dvh;
+    margin-top: 2rem;
+    border-radius: 5px;
+  }
+  .featuresItemsWrap .share {
+    display: none;
+  }
+  .featuresItemsWrap .share .shareImage img {
+    width: 65%;
+  }
+  .featuresItemsWrap .share .shareContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    height: 26dvh;
+  }
+  .featuresItemsWrap .share .shareContent a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: hsl(231deg, 69%, 60%);
+    color: hsl(0deg, 0%, 100%);
+    width: 20dvh;
+    height: 5dvh;
+    margin-top: 2rem;
+    border-radius: 5px;
+  }
+  .featuresItemsWrap .wrap {
+    position: relative;
+    height: 65dvh;
+  }
+  .featuresItemsWrap .wrap img {
     width: 75%;
+  }
+  .featuresItemsWrap .wrap .shapeFeatures {
+    position: absolute;
+    z-index: -1;
+    width: 70%;
+    height: 40%;
+    left: 0;
+    top: 13%;
+    background-color: hsl(231deg, 69%, 60%);
+    border-bottom-right-radius: 53%;
+    margin-bottom: 2rem;
+  }
+  .downloadWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  .downloadWrapper h3 {
+    color: hsl(229deg, 31%, 21%);
+  }
+  .downloadWrapper p {
+    color: hsl(229deg, 8%, 60%);
+  }
+  .browserExtension {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .browserExtension .extensionWrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    width: 60%;
+    height: 45dvh;
+    box-shadow: 0px 9px 13px 3px rgba(195, 179, 179, 0.7);
+    border-radius: 15px;
+  }
+  .browserExtension .addExtension {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30%;
+    border-top: 5px dotted hsl(229deg, 8%, 60%);
+  }
+  .browserExtension .addExtension a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+    width: 80%;
+    text-decoration: none;
+    font-weight: 700;
+    color: hsl(0deg, 0%, 100%);
+    background-color: hsl(231deg, 69%, 60%);
+    border-radius: 5px;
   }
 }/*# sourceMappingURL=style.css.map */

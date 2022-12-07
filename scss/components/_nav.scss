@@ -77,4 +77,31 @@
 			}
 		}
 	}
+
+	//featuresNav
+
+	.featuresItems {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 3rem;
+		height: 35dvh;
+		li {
+			list-style: none;
+			padding: 1rem;
+			border-top: 1px solid $grayishBlue;
+			width: 80%;
+			&:last-child {
+				border-bottom: 1px solid $grayishBlue;
+			}
+			a {
+				text-decoration: none;
+				color: $veryDarkBlue;
+				&.active {
+					border-bottom: 3px solid hsl(0deg, 94%, 66%);
+					padding-bottom: 0.8rem;
+				}
+			}
+		}
+	}
 }
