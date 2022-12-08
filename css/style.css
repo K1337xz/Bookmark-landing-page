@@ -28,6 +28,7 @@
     height: 100%;
     background-color: hsl(229deg, 31%, 21%);
     opacity: 0.9;
+    z-index: 999;
   }
   .navWrapper img {
     filter: invert(1) brightness(9);
@@ -118,6 +119,8 @@
   .container {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    width: 100%;
   }
   .topWrapper {
     display: flex;
@@ -129,7 +132,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 35dvh;
+    height: 45vh;
     text-align: center;
     gap: 1rem;
   }
@@ -143,15 +146,15 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
-    height: 8dvh;
+    height: 8vh;
     width: 100%;
   }
   .topWrapper .topContent .buttonsTop a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 6dvh;
-    width: 20dvh;
+    height: 80%;
+    width: 40%;
     text-decoration: none;
     color: hsl(0deg, 0%, 100%);
     border-radius: 5px;
@@ -166,13 +169,13 @@
   }
   .topWrapper .topImage {
     position: relative;
-    height: 45dvh;
+    height: 45vh;
   }
   .topWrapper .topImage .shapeTop {
     position: absolute;
     z-index: -1;
     width: 90%;
-    height: 75%;
+    height: 95%;
     right: 0;
     top: 13%;
     background-color: hsl(231deg, 69%, 60%);
@@ -203,8 +206,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 3rem;
-    height: 33dvh;
+    margin-top: 5rem;
+    height: 33vh;
   }
   .featuresItemsWrap .bookmark .bookmarkContent a {
     display: flex;
@@ -214,7 +217,7 @@
     background-color: hsl(231deg, 69%, 60%);
     color: hsl(0deg, 0%, 100%);
     width: 20dvh;
-    height: 5dvh;
+    height: 5vh;
     margin-top: 2rem;
     border-radius: 5px;
   }
@@ -229,8 +232,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 3rem;
-    height: 26dvh;
+    margin-top: 5rem;
+    height: 26vh;
   }
   .featuresItemsWrap .inteligent .intelligentContent a {
     display: flex;
@@ -240,7 +243,7 @@
     background-color: hsl(231deg, 69%, 60%);
     color: hsl(0deg, 0%, 100%);
     width: 20dvh;
-    height: 5dvh;
+    height: 5vh;
     margin-top: 2rem;
     border-radius: 5px;
   }
@@ -255,8 +258,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 3rem;
-    height: 26dvh;
+    margin-top: 5rem;
+    height: 26vh;
   }
   .featuresItemsWrap .share .shareContent a {
     display: flex;
@@ -266,13 +269,13 @@
     background-color: hsl(231deg, 69%, 60%);
     color: hsl(0deg, 0%, 100%);
     width: 20dvh;
-    height: 5dvh;
+    height: 5vh;
     margin-top: 2rem;
     border-radius: 5px;
   }
   .featuresItemsWrap .wrap {
     position: relative;
-    height: 65dvh;
+    height: 65vh;
   }
   .featuresItemsWrap .wrap img {
     width: 75%;
@@ -281,7 +284,7 @@
     position: absolute;
     z-index: -1;
     width: 70%;
-    height: 40%;
+    height: 50%;
     left: 0;
     top: 13%;
     background-color: hsl(231deg, 69%, 60%);
@@ -293,7 +296,8 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 7rem;
+    height: auto;
     margin-bottom: 2rem;
   }
   .downloadWrapper h3 {
@@ -318,7 +322,7 @@
     justify-content: center;
     gap: 2rem;
     width: 60%;
-    height: 45dvh;
+    height: 55vh;
     box-shadow: 0px 9px 13px 3px rgba(195, 179, 179, 0.7);
     border-radius: 15px;
   }
@@ -334,12 +338,189 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40%;
+    height: 60%;
     width: 80%;
     text-decoration: none;
     font-weight: 700;
     color: hsl(0deg, 0%, 100%);
     background-color: hsl(231deg, 69%, 60%);
     border-radius: 5px;
+  }
+  .faqWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem;
+  }
+  .faqWrapper h3 {
+    color: hsl(229deg, 31%, 21%);
+    margin-bottom: 2rem;
+  }
+  .faqWrapper p {
+    color: hsl(229deg, 8%, 60%);
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+  .faqWrapper a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 4rem;
+    width: 50%;
+    height: 7vh;
+    background-color: hsl(231deg, 69%, 60%);
+    color: hsl(0deg, 0%, 100%);
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .faqWrapper .faq {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 3rem;
+  }
+  .faqWrapper .faq .faqQuestion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    width: 100%;
+    border-bottom: 2px solid rgba(195, 179, 179, 0.7);
+  }
+  .faqWrapper .faq .faqQuestion h4 {
+    color: hsl(229deg, 31%, 21%);
+    font-weight: 500;
+  }
+  .faqWrapper .faq .faqQuestion .arrowDown {
+    color: hsl(231deg, 69%, 60%);
+  }
+  .faqWrapper .faq .faqQuestion .arrowDown.active {
+    color: hsl(0deg, 94%, 66%);
+    transform: rotate(180deg);
+  }
+  .faqWrapper .faq .firstFaq {
+    display: none;
+  }
+  .faqWrapper .faq .secondFaq {
+    display: none;
+  }
+  .faqWrapper .faq .thirdFaq {
+    display: none;
+  }
+  .faqWrapper .faq .fourthQuestion {
+    display: none;
+  }
+  .upperFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 40vh;
+    margin-top: 4rem;
+    background-color: hsl(231deg, 69%, 60%);
+    gap: 1rem;
+  }
+  .upperFooter h5 {
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    color: hsl(0deg, 0%, 100%);
+  }
+  .upperFooter p {
+    text-align: center;
+    color: hsl(0deg, 0%, 100%);
+    font-size: 25px;
+  }
+  .upperFooter .contactForm {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin-top: 1rem;
+  }
+  .upperFooter .contactForm #email {
+    width: 30dvh;
+    height: 5vh;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    padding-left: 1rem;
+    outline: none;
+    border: none;
+  }
+  .upperFooter .contactForm #email.errorInp {
+    border: 2px solid hsl(0deg, 94%, 66%);
+  }
+  .upperFooter .contactForm #emailButton {
+    width: 30dvh;
+    height: 5vh;
+    background-color: hsl(0deg, 94%, 66%);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: hsl(0deg, 0%, 100%);
+    font-weight: 500;
+  }
+  .upperFooter .contactForm .error {
+    display: none;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    padding-left: 1rem;
+    left: 0%;
+    top: 22%;
+    width: 100%;
+    height: 25%;
+    font-size: 10px;
+    background-color: hsl(0deg, 94%, 66%);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(229deg, 31%, 21%);
+    height: 40vh;
+  }
+  footer .footerNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  footer .footerNav img {
+    filter: brightness(50%);
+  }
+  footer .footerNav li {
+    list-style-type: none;
+    padding: 1rem;
+  }
+  footer .footerNav li a {
+    text-decoration: none;
+    color: hsl(0deg, 0%, 100%);
+    text-align: center;
+  }
+  footer .socialWrap {
+    display: flex;
+    gap: 2rem;
+  }
+  footer .socialWrap a {
+    color: hsl(0deg, 0%, 100%);
+  }
+  footer .socialWrap span {
+    display: none;
+  }
+  footer .information {
+    color: hsl(0deg, 0%, 100%);
+  }
+  footer .information a {
+    color: hsl(0deg, 94%, 66%);
   }
 }/*# sourceMappingURL=style.css.map */

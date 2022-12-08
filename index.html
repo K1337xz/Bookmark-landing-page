@@ -284,12 +284,24 @@
 			<div class="upperFooter">
 				<h5>35.300 + Already joined</h5>
 				<p>Stay up-to-date with what we're doing</p>
-				<form method="get">
+				<form method="get" class="contactForm">
 					<label for="email">
-						<input type="email" name="email" id="email" />
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="Enter your email addres"
+						/>
+						<p class="error">
+							<sub>Whoops, make sure it's an email</sub>
+						</p>
 					</label>
 					<label for="contactButton">
-						<input type="button" value="Contact Us" id="email" />
+						<input
+							type="button"
+							value="Contact Us"
+							id="emailButton"
+						/>
 					</label>
 				</form>
 			</div>
@@ -323,7 +335,8 @@
 						href="https://www.frontendmentor.io?ref=challenge"
 						target="_blank"
 						>Frontend Mentor</a
-					>. Coded by <a href="#">Your Name Here</a>.
+					>. Coded by
+					<a href="https://github.com/K1337xz">Jakub B</a>.
 				</p>
 			</div>
 		</footer>

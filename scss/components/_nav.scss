@@ -24,6 +24,7 @@
 		height: 100%;
 		background-color: $veryDarkBlue;
 		opacity: 0.9;
+		z-index: 999;
 		img {
 			filter: invert(1) brightness(9);
 		}
