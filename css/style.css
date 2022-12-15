@@ -610,6 +610,10 @@
   }
   .featuresItemsWrap .bookmark {
     display: block;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .featuresItemsWrap .bookmark .bookmarkContent {
     display: flex;
@@ -633,6 +637,10 @@
   }
   .featuresItemsWrap .inteligent {
     display: none;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .featuresItemsWrap .inteligent .inteligentImage img {
     width: 65%;
@@ -659,6 +667,11 @@
   }
   .featuresItemsWrap .share {
     display: none;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
   }
   .featuresItemsWrap .share .shareImage img {
     width: 65%;
@@ -810,10 +823,18 @@
     transition: transform 1.2s linear;
     color: hsl(231deg, 69%, 60%);
   }
-  .faqWrapper .faq .faqWrapp.active .arrowDown {
+  .faqWrapper .faq .faqQuestion.active {
+    border-bottom: none;
+  }
+  .faqWrapper .faq .faqQuestion.active .arrowDown {
     color: hsl(0deg, 94%, 66%);
     transform: rotate(180deg);
-    transition: transform 1s linear;
+    transition: transform 0.9s linear;
+  }
+  .faqWrapper .faq .faqQuestion.unActive .arrowDown {
+    color: hsl(231deg, 69%, 60%);
+    transform: rotate(0deg);
+    transition: transform 0.5s linear;
   }
   .faqWrapper .faq .answer {
     display: none;

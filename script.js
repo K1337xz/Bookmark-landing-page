@@ -3,6 +3,7 @@ const closeMobile = document.querySelector(".closeMobile");
 const showMobileMenu = document.querySelector(".navWrapper");
 const featuresNav = document.querySelectorAll(".featuresItems li");
 const faqItem = document.querySelectorAll(".faqWrapp");
+const emailButton = document.querySelector("#emailButton");
 //open Mobile menu
 openMobile.addEventListener("click", () => {
 	showMobileMenu.classList.add("activeMen");
@@ -53,6 +54,7 @@ for (let i = 0; i < faqItem.length; i++) {
 function showFaq() {
 	let answer = this.children;
 	let wrappers = this;
+	const allfaqWrapps = document.querySelectorAll(".faqWrapp");
 	const allAnswers = document.querySelectorAll(".answer");
 	const allQuestions = document.querySelectorAll(".faqQuestion");
 	for (let i = 0; i < allAnswers.length; i++) {
@@ -70,6 +72,13 @@ function showFaq() {
 		if (allQuestions[i].classList.contains("active")) {
 			allQuestions[i].classList.remove("active");
 			allQuestions[i].classList.add("unActive");
+		} else if (allQuestions[i].classList.contains("unActive")) {
+			allQuestions[i].classList.remove("unActive");
+		}
+	}
+	for (let i = 0; i < allfaqWrapps.length; i++) {
+		if (allfaqWrapps[i].classList.contains("active")) {
+			allfaqWrapps[i].classList.remove("active");
 		}
 	}
 	wrappers.classList.add("active");
@@ -79,3 +88,21 @@ function showFaq() {
 }
 
 //email validiation
+function checkEmail(e) {
+	const emailInput = document.querySelector("#email");
+	const error = document.querySelector(".error");
+	const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+	if (emailInput.value.match(regex)) {
+		return true;
+	} else if (emailInput.value === `` || !emailInput.value.match(regex)) {
+		error.style.display = `flex`;
+		emailInput.innerHTML = ``;
+		emailInput.placeholder = `example@email.com`;
+		e.preventDefault();
+	} else {
+		error.style.display = `flex`;
+		emailInput.classList.add("errorInp");
+		e.preventDefault();
+	}
+}
+emailButton.addEventListener("click", checkEmail);

@@ -99,6 +99,10 @@
 	.featuresItemsWrap {
 		.bookmark {
 			display: block;
+			justify-content: flex-start;
+			align-content: center;
+			align-items: center;
+			flex-direction: column;
 			.bookmarkContent {
 				display: flex;
 				flex-direction: column;
@@ -122,6 +126,10 @@
 		}
 		.inteligent {
 			display: none;
+			justify-content: flex-start;
+			align-content: center;
+			align-items: center;
+			flex-direction: column;
 			.inteligentImage {
 				img {
 					width: 65%;
@@ -150,6 +158,11 @@
 		}
 		.share {
 			display: none;
+			justify-content: flex-start;
+			align-content: center;
+			align-items: center;
+			flex-direction: column;
+			gap: 2rem;
 			.shareImage {
 				img {
 					width: 65%;
@@ -303,16 +316,23 @@
 					transition: transform 1.2s linear;
 					color: $softBlue;
 				}
-			}
-			.faqWrapp {
 				&.active {
+					border-bottom: none;
 					.arrowDown {
 						color: $softRed;
 						transform: rotate(180deg);
-						transition: transform 1s linear;
+						transition: transform 0.9s linear;
+					}
+				}
+				&.unActive {
+					.arrowDown {
+						color: $softBlue;
+						transform: rotate(0deg);
+						transition: transform 0.5s linear;
 					}
 				}
 			}
+
 			.answer {
 				display: none;
 			}
