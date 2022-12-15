@@ -427,6 +427,8 @@
 		background-color: $white;
 		opacity: 0.9;
 		z-index: 999;
+		transition: none;
+		transform: none;
 		img {
 			filter: invert(1) brightness(9);
 		}

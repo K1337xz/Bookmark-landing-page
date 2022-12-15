@@ -31,17 +31,17 @@ for (let i = 0; i < featuresNav.length; i++) {
 		featuresNav[i].classList.add("active");
 		child.classList.add("active");
 		if (child.textContent === `Simple Bookmarking`) {
-			bookmarkWrap.style.display = `block`;
+			bookmarkWrap.style.display = `flex`;
 			inteligentWrap.style.display = `none`;
 			shareWrap.style.display = `none`;
 		} else if (child.textContent === `Speedy Searching`) {
 			bookmarkWrap.style.display = `none`;
-			inteligentWrap.style.display = `block`;
+			inteligentWrap.style.display = `flex`;
 			shareWrap.style.display = `none`;
 		} else {
 			bookmarkWrap.style.display = `none`;
 			inteligentWrap.style.display = `none`;
-			shareWrap.style.display = `block`;
+			shareWrap.style.display = `flex`;
 		}
 	});
 }
@@ -54,7 +54,7 @@ function showFaq() {
 	let answer = this.children;
 	let wrappers = this;
 	const allAnswers = document.querySelectorAll(".answer");
-
+	const allQuestions = document.querySelectorAll(".faqQuestion");
 	for (let i = 0; i < allAnswers.length; i++) {
 		if (allAnswers[i].classList.contains("activeFaq")) {
 			allAnswers[i].classList.remove("activeFaq");
@@ -66,7 +66,16 @@ function showFaq() {
 			wrappers.classList.remove("active");
 		}
 	}
+	for (let i = 0; i < allQuestions.length; i++) {
+		if (allQuestions[i].classList.contains("active")) {
+			allQuestions[i].classList.remove("active");
+			allQuestions[i].classList.add("unActive");
+		}
+	}
 	wrappers.classList.add("active");
 	answer[1].style.display = `block`;
 	answer[1].classList.add(`activeFaq`);
+	this.children[0].classList.add("active");
 }
+
+//email validiation

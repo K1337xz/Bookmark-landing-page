@@ -309,23 +309,11 @@
 					.arrowDown {
 						color: $softRed;
 						transform: rotate(180deg);
-						transition: transform 1.2s linear;
+						transition: transform 1s linear;
 					}
 				}
 			}
 			.answer {
-				display: none;
-			}
-			.firstFaq {
-				display: none;
-			}
-			.secondFaq {
-				display: none;
-			}
-			.thirdFaq {
-				display: none;
-			}
-			.fourthQuestion {
 				display: none;
 			}
 		}
@@ -532,7 +520,7 @@
 	}
 	.featuresItemsWrap {
 		.bookmark {
-			display: block;
+			display: flex;
 			.bookmarkContent {
 				display: flex;
 				flex-direction: column;
@@ -558,7 +546,7 @@
 			display: none;
 			.inteligentImage {
 				img {
-					width: 65%;
+					width: auto;
 				}
 			}
 			.intelligentContent {
@@ -722,6 +710,12 @@
 			text-align: left;
 			margin-top: 3rem;
 			width: 100%;
+			.answer {
+				display: none;
+				p {
+					width: 100%;
+				}
+			}
 			.faqQuestion {
 				display: flex;
 				align-items: center;
@@ -729,7 +723,6 @@
 				height: 10vh;
 				width: 100%;
 				border-bottom: 2px solid rgb(195 179 179 / 70%);
-
 				h4 {
 					color: $veryDarkBlue;
 					font-weight: 500;
@@ -742,17 +735,14 @@
 					color: $softBlue;
 				}
 			}
-			.firstFaq {
-				display: none;
-			}
-			.secondFaq {
-				display: none;
-			}
-			.thirdFaq {
-				display: none;
-			}
-			.fourthQuestion {
-				display: none;
+			.buttonHolder {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+				a {
+					width: 30%;
+				}
 			}
 		}
 	}
@@ -1610,6 +1600,7 @@
 					height: 5vh;
 					margin-top: 2rem;
 					border-radius: 5px;
+					margin-left: -9rem;
 				}
 			}
 		}
@@ -1635,13 +1626,14 @@
 				p {
 					color: hsl(229deg, 8%, 60%);
 					margin-top: 1rem;
-					width: 36%;
+					width: 46%;
 				}
 				a {
 					display: flex;
 					align-items: center;
 					justify-content: center;
 					text-decoration: none;
+					margin-left: -15rem;
 					background-color: $softBlue;
 					color: $white;
 					width: 20dvh;
@@ -1675,7 +1667,7 @@
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
-		margin-top: 7rem;
+		margin-top: 0rem;
 		height: auto;
 		h3 {
 			color: $veryDarkBlue;
@@ -1803,6 +1795,16 @@
 				}
 				&.active {
 					border-bottom: none;
+					.arrowDown {
+						color: $softRed;
+						transform: rotate(180deg);
+						transition: transform 0.9s linear;
+					}
+				}
+				&.unActive {
+					color: $softBlue;
+					transform: rotate(0deg);
+					transition: transform 0.5s linear;
 				}
 
 				h4 {
