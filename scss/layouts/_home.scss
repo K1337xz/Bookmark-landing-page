@@ -748,11 +748,24 @@
 					font-weight: 500;
 				}
 				.arrowDown {
-					&.active {
+					transform: rotate(0);
+					transition: transform 1.2s linear;
+					color: $softBlue;
+				}
+				&.active {
+					border-bottom: none;
+					.arrowDown {
 						color: $softRed;
 						transform: rotate(180deg);
+						transition: transform 0.9s linear;
 					}
-					color: $softBlue;
+				}
+				&.unActive {
+					.arrowDown {
+						color: $softBlue;
+						transform: rotate(0deg);
+						transition: transform 0.5s linear;
+					}
 				}
 			}
 			.buttonHolder {
@@ -1264,11 +1277,24 @@
 					font-weight: 500;
 				}
 				.arrowDown {
-					&.active {
+					transform: rotate(0);
+					transition: transform 1.2s linear;
+					color: $softBlue;
+				}
+				&.active {
+					border-bottom: none;
+					.arrowDown {
 						color: $softRed;
 						transform: rotate(180deg);
+						transition: transform 0.9s linear;
 					}
-					color: $softBlue;
+				}
+				&.unActive {
+					.arrowDown {
+						color: $softBlue;
+						transform: rotate(0deg);
+						transition: transform 0.5s linear;
+					}
 				}
 			}
 			.firstFaq {
@@ -1816,15 +1842,25 @@
 				&.active {
 					border-bottom: none;
 					.arrowDown {
-						color: $softRed;
-						transform: rotate(180deg);
-						transition: transform 0.9s linear;
+						transform: rotate(0);
+						transition: transform 1.2s linear;
+						color: $softBlue;
 					}
-				}
-				&.unActive {
-					color: $softBlue;
-					transform: rotate(0deg);
-					transition: transform 0.5s linear;
+					&.active {
+						border-bottom: none;
+						.arrowDown {
+							color: $softRed;
+							transform: rotate(180deg);
+							transition: transform 0.9s linear;
+						}
+					}
+					&.unActive {
+						.arrowDown {
+							color: $softBlue;
+							transform: rotate(0deg);
+							transition: transform 0.5s linear;
+						}
+					}
 				}
 
 				h4 {
